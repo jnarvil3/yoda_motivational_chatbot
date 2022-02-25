@@ -1,0 +1,90 @@
+body {
+           background: url("https://media.istockphoto.com/photos/stars-at-night-sky-picture-id498478219?k=20&m=498478219&s=612x612&w=0&h=hur0dTEr3wUhPHWhvyiIfw_7KL1aQx1Y6QPuJjD_pd8=");
+       }
+
+       .columnOne {
+           grid-column: 1;
+
+       }
+
+       .columnTwo {
+           grid-column: 2;
+       }
+
+       .columnThree {
+           grid-column: 3;
+       }
+
+       h1 {
+           position: fixed;
+           color: white;
+           background: black;
+           width: 100%;
+           z-index: 6;
+           text-align: center;
+           padding: 10px;
+           margin: -10px -10px -10px -10px;
+       }
+
+       .wrapper {
+           width: 100vw;
+         grid-template-columns: 1fr 1fr 1fr;
+           grid-template-rows: 100px 100px;
+           grid-gap: 10px;
+           position: relative;
+       }
+
+       #chatMessageArea{
+           position: relative;
+           display: grid;
+           max-width: 100vw;
+           max-height: 100vh;
+           top: 100px;
+       }
+
+        For mobile phones:
+       @media (max-width: 500px) {
+         #chatMessageArea {
+           position: relative;
+           display: grid;
+           max-width: 100vw;
+           max-height: 100vh;
+           padding: 40px 0 0 0;
+       }
+
+       }
+
+
+       .userReply {
+           position: relative;
+           max-width: 200px;
+           height: auto;
+           background-color: blue;
+           border-radius: 20px;
+           padding: 10px;
+           margin-left: auto;
+           right: 17px;
+           bottom: 45px;
+       }
+
+       .yodaReply {
+           position: relative;
+           max-width: 200px;
+           height: auto;
+           background-color: green;
+           border-radius: 20px;
+           padding: 10px;
+           bottom: 45px;
+
+       }
+
+       #userMessageForm {
+           position: fixed;
+           bottom: 5px;
+           width: 100%;
+           z-index: 6;
+           text-align: center;
+           padding: 10px;
+           margin: -8px -10px -10px -25px;
+           background: black;
+       }
